@@ -1,0 +1,27 @@
+<html>
+<body>
+	<wicket:extend>
+		<h3>Notifications List</h3>
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Date</th>
+					<th>Type</th>
+					<th>From</th>
+					<th>Message</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr wicket:id="notification">
+					<td wicket:id="created" />
+					<td wicket:id="type" />
+					<td>
+						<img wicket:id="distinguished"/><a wicket:id="profile"> <span wicket:id="username"></span> </a>
+					</td>
+					<td wicket:id="message" />
+				</tr>
+			</tbody>
+		</table>
+	</wicket:extend>
+</body>
+</html>

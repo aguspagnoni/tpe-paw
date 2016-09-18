@@ -1,0 +1,31 @@
+<html>
+<body>
+	<wicket:panel>
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Poster</th>
+					<th class="col-md-6">Post</th>
+					<th>Created</th>
+					<th>Original</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr wicket:id="post">
+					<td><img wicket:id="distinguished" /></td>
+					<td><a href="#" wicket:id="authorLink"><span wicket:id="user.username">Username</span></a></td>
+					<td wicket:id="body">Some post content</td>
+					<td wicket:id="created">Post creation date</td>
+					<td><img wicket:id="distinguished"/><a wicket:id="repostAuthorLink" link="#"><span
+							wicket:id="originalPost.user.username"></span></a></td>
+					<td><a wicket:id="repostPostLink" link="#">Repost</a></td>
+					<td><a wicket:id="favoritePostLink" link="#">Favorite</a><a
+						wicket:id="unfavoritePostLink" link="#">Unfavorite</a></td>
+					<td><a wicket:id="deletePostLink" link="#">Delete post</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</wicket:panel>
+</body>
+</html>

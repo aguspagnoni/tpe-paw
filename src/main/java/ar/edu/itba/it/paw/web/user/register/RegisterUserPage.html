@@ -1,0 +1,68 @@
+<html>
+<body>
+	<wicket:extend>
+		<span wicket:id="feedback" />
+		<form wicket:id="registerForm">
+			<ul>
+				<li>
+					<h2>Registration Form</h2>
+					<span class="required_notification">*Denotes Required Field</span>
+					<br/>
+				</li>
+				<li>
+					<label>First Name:</label>
+					<input wicket:id="firstname" type="text" placeholder="Firstname" />
+				</li>
+				<li>
+					<label>Last Name:</label>
+					<input wicket:id="lastname" type="text" placeholder="Lastname" />
+				</li>
+				<li>
+					<label>Username:</label>
+					<input wicket:id="username" type="text" placeholder="Username" />
+				</li>
+				<li>
+					<label>Password:</label>
+					<input wicket:id="password" type="password" placeholder="Password" />
+				</li>
+				<li>
+					<label>Re-type Password:</label>
+					<input wicket:id="repassword" type="password" placeholder="Password" />
+				</li>
+				<li>
+					<label>Description:</label>
+					<input wicket:id="description" type="text" placeholder="Description" />
+				</li>
+				<li>
+					<h3>Password Recovery</h3>
+				</li>
+				<li>
+					<label>Secret Question:</label>
+					<input wicket:id="question" type="text" placeholder="Question" />
+				</li>
+				<li>
+					<label>Answer:</label>
+					<input wicket:id="answer" type="text" placeholder="Answer" />
+				</li>
+				<li>
+					<h3>Privacy</h3>
+					Check the box bellow to allow your profile to be viewed by others.
+				</li>
+				<li>
+					<label>Publicity:</label>
+					<input wicket:id="viewable" type="checkbox" />
+				</li>
+				<li>
+					<img wicket:id="captchaImage" />
+					Please replicate the text you see above
+               	 <br />
+                	<input wicket:id="captcha" id="captcha" type="text" size="40" />
+				</li>
+				<li>
+					<input wicket:id="submit" type="submit" />
+				</li>
+			</ul>
+		</form>
+	</wicket:extend>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+<body>
+	<wicket:extend>
+		<h1>
+			<wicket:message key="page.welcome"></wicket:message>
+		</h1>
+
+		<!-- Remove -->
+		<!--<span wicket:id="userLoggedIn">Test</span>-->
+
+		<div wicket:id="loginFeedback" />
+		<form wicket:id="loginForm">
+			<div class="form-group">
+				<label class="col-md-1">Username:</label>
+				<div class="col-md-3">
+					<input wicket:id="username" class="form-control" type="text"
+						placeholder="Your username here..." required="required"
+						autocomplete="off" autofocus="autofocus" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-md-1">Password:</label>
+				<div class="col-md-3">
+					<input wicket:id="password" class="form-control" type="password"
+						placeholder="Your password here..." required="required"
+						pattern=".{6,}" />
+				</div>
+				<span class="help-text">At least 6 characters long.</span>
+			</div>
+			<div class="form-group">
+				<label class="col-md-1">Keep me logged in</label>
+				<div class="col-md-3">
+					<input wicket:id="rememberme" class="form-control" type="checkbox" />
+				</div>
+			</div>
+			<input wicket:id="login" type="submit" />
+		</form>
+		<a href="#" wicket:id="recoverPassLink">Forgot your password?</a>
+
+		<div>
+			<h2>Register</h2>
+			If you are new to Jitter, you can register by clicking the button <a
+				href="#" wicket:id="linkRegister">Register</a>
+		</div>
+
+		<div wicket:id="postListing"></div>
+
+		<div>
+			<h2 class="popularhashtags">Most Popular Hashtags:</h2>
+			<p>
+			<span>Select date range:</span> 
+				<a wicket:id="popularHashtagsLink1day" href="#">1 day</a> <a
+					wicket:id="popularHashtagsLink7day" href="#">7 day</a> <a
+					wicket:id="popularHashtagsLink30day" href="#">30 day</a>
+
+			</p>
+			<div wicket:id="hashtagListing"></div>
+		</div>
+
+
+
+	</wicket:extend>
+</body>
+</html>

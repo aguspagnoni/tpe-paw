@@ -1,0 +1,41 @@
+<wicket:panel>
+	<nav class="navbar navbar-default">
+		<a class="navbar-brand" href="#" wicket:id="indexPageLink">Jitter</a>
+		<ul class="nav navbar-nav">
+			<li>
+				<a href="#" wicket:id="accountInfoPageLink">My Profile</a>
+			</li>
+			<li>
+				<a href="#" wicket:id="createPostPageLink">Create Jit!</a>
+			</li>
+			<li>
+				<a href="#" wicket:id="listNotificationsPageLink">Notifications</a>
+			</li>
+			<li>
+				<a href="#" wicket:id="postFavoritesPageLink">Favorites</a>
+			</li>
+			<li>
+				<a href="#" wicket:id="listGatheringsPageLink">Gatherings</a>
+			</li>
+			<li>
+				<a href="#" wicket:id="listBlacklistPageLink">Blacklist</a>
+			</li>
+			<li>
+				<a href="#" wicket:id="userLogoutLink">Logout</a>
+			</li>
+			<li>
+				<form wicket:id="userSearchForm">
+					<input wicket:id="searchText" type="text" />
+					<input wicket:id="find" type="submit" /> 
+				</form>
+			</li>
+		</ul>
+	
+		<p class="navbar-text navbar-right">
+			<a href="#" wicket:id="usernameLink">
+				<span wicket:id="username"></span>
+			</a>
+		</p>
+	</nav>
+	
+</wicket:panel>

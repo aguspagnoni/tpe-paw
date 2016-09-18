@@ -1,0 +1,76 @@
+<html>
+	<body>
+		<wicket:extend>
+			<div>
+				<h2>Edit Profile</h2>
+				<div wicket:id="errorPanel" class="error" />
+				<form wicket:id="editProfileForm">
+					<div>
+						<label>Name:</label>
+						<div>
+							<input type="text" wicket:id="username" />
+						</div>
+					</div>
+					<div>
+						<label>Surname:</label>
+						<div>
+							<input type="text" wicket:id="firstName" />
+						</div>
+					</div>
+					<div>
+						<label>Surname:</label>
+						<div>
+							<input type="text" wicket:id="lastName" />
+						</div>
+					</div>
+					<div>
+						<label>Question:</label>
+						<div>
+							<input type="text" wicket:id="question" />
+						</div>
+					</div>
+					<div>
+						<label>Answer:</label>
+						<div>
+							<input type="text" wicket:id="answer" />
+						</div>
+					</div>
+					<div>
+						<label>Password:</label>
+						<div >
+							<input type="password" wicket:id="password" />
+						</div>
+					</div>
+					<div>
+						<label >Confirm
+							password:</label>
+						<div >
+							<input type="password" wicket:id="confirmPassword" />
+						</div>
+					</div>
+					<div>
+						<label>Description:</label>
+						<div>
+							<input type="text" wicket:id="description" />
+						</div>
+					</div>
+					<div>
+						<label>Privacy:</label>
+						<div >
+							<input wicket:id="viewable" type="checkbox" />
+						</div>
+					</div>
+<!-- 					<div class="control-group"> -->
+<!-- 						<label for="picture">Picture:</label> -->
+<!-- 						<div class="controls registration-field"> -->
+<!-- 							<input type="file" name="picture" /> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+					<div class="form-buttons">
+						<input type="submit" wicket:id="submit" value="Save" />
+					</div>
+				</form>
+			</div>
+		</wicket:extend>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+	<body>
+		<wicket:extend>
+			<h3><wicket:message key="page.title">Blacklist</wicket:message></h3>
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th><wicket:message key="username">Username</wicket:message></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr wicket:id="blacklisted_user">
+						<td><img wicket:id="distinguished"/></td>
+						<td wicket:id="username">John Doe</td>
+						<td><a wicket:id="remove"><img wicket:id="imgRemove"/></a></td>
+					</tr>
+				</tbody>
+			</table>
+			<div wicket:id="feedback" class="formErrors" />
+			<form wicket:id="form">
+				<div>
+					<label><wicket:message key="username">Username to be blacklisted</wicket:message>:</label>
+					<input wicket:id="username" type="text" />
+					<a wicket:id="add"><img wicket:id="addImage" /></a>
+				</div>
+			</form>
+		</wicket:extend>
+	</body>
+</html>
